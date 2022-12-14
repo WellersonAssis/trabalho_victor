@@ -2,6 +2,10 @@ public class ContaPoupanca extends Conta {
 
     private Double rentabilidadeMensal;
 
+    public ContaPoupanca(String numero) {
+        super(numero);
+    }
+
     public Double getRentabilidadeMensal() {
         return rentabilidadeMensal;
     }

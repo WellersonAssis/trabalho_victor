@@ -3,6 +3,10 @@ public class Funcionario extends Pessoa {
     private Double salario;
     private Cargo cargo;
 
+    public Funcionario(Double salario){
+        this.setSalario(salario);
+    }
+
     public Double getSalario() {
         return salario;
     }

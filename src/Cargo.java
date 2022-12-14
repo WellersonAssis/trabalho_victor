@@ -3,6 +3,10 @@ public class Cargo {
     private String nome;
     private Funcionario funcionario;
 
+    public Cargo (String nome){
+        this.setNome(nome);
+    }
+
 
     public String getNome() {
         return nome;

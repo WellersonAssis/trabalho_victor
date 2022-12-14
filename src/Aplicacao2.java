@@ -12,31 +12,13 @@ public class Aplicacao2 {
         c.setVip(Boolean.valueOf("1"));
 
 
-        Endereco endereco1 = new Endereco();
-        endereco1.setCep("22795330");
-        endereco1.setLogadouro("Rua Adina Mera");
-        endereco1.setNumero("200");
-        endereco1.setComplemento("Casa");
-        endereco1.setCidade("Rio de Janeiro");
-        endereco1.setUf("RJ");
+        Endereco endereco1 = new Endereco("22795330","Rua Adina Mera","200","Casa","Rio de Janeiro","RJ");
         endereco1.setCliente(c);
 
-        Endereco endereco2 = new Endereco();
-        endereco2.setCep("35902-005");
-        endereco2.setLogadouro("Rua DW-44");
-        endereco2.setNumero("1345");
-        endereco2.setComplemento("Apt 02, Andar 4");
-        endereco2.setCidade("Itabira");
-        endereco2.setUf("MG");
+        Endereco endereco2 = new Endereco("35902-005","Rua DW-44","1345","Apt 02, Andar 4","Itabira","MG");
         endereco2.setCliente(c);
 
-        Endereco endereco3 = new Endereco();
-        endereco3.setCep("52071321");
-        endereco3.setLogadouro(" Rua Bebinho Salgado");
-        endereco3.setNumero("578");
-        endereco3.setComplemento("Loja 03");
-        endereco3.setCidade("Recife");
-        endereco3.setUf("PE");
+        Endereco endereco3 = new Endereco("52071321","Rua Bebinho Salgado","578","Loja 03","Recife","PE");
         endereco3.setCliente(c);
 
 

@@ -1,23 +1,25 @@
 //Crie dois funcionários do banco, um gerente e um atendente.
+
 public class Aplicacao1 {
 
     public static void main(String[] args) {
 
-        Funcionario f1 = new Funcionario();
-        f1.setNome("Fabio");
+        Funcionario f = new Funcionario(2000.00);
+        f.setNome("Rafael Vieira");
 
-        Funcionario f2 = new Funcionario();
-        f2.setNome("Marcelo");
+        Funcionario f2 = new Funcionario(800.00);
+        f2.setNome("José Orvalino");
 
-        Cargo g1 = new Cargo();
-        g1.setNome("Gerente");
-        g1.setFuncionario(f1);
 
-        Cargo g2 = new Cargo();
-        g2.setNome("Atendente");
-        g2.setFuncionario(f2);
+        Cargo c = new Cargo("Gerente");
+        Cargo c2 = new Cargo("Atendente");
+
+        c.setFuncionario(f);
+        c2.setFuncionario(f2);
 
 
 
     }
+
 }
+

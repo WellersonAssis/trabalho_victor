@@ -1,8 +1,20 @@
-import com.sun.jdi.DoubleValue;
+
 
 public class Conta {
 
+
     private String numero;
+
+    private Conta conta;
+
+    private Cliente cliente;
+
+    public Conta(String numero) {
+        this.setNumero(numero);
+    }
+
+    public Conta(float saldo) {
+    }
 
     public String getNumero() {
         return numero;
@@ -12,24 +24,32 @@ public class Conta {
         this.numero = numero;
     }
 
-    private Double depositar;
+    public Double depositar;
 
-    public Double getDepositar() {
-        return depositar;
+    public Double sacar;
+
+
+    public Conta getConta() {
+        return conta;
     }
 
-    public void setDepositar(Double depositar) {
-        this.depositar = depositar;
+    public void setConta(Conta conta) {
+        this.conta = conta;
     }
 
-    private Double sacar;
-
-    public Double getSacar() {
-        return sacar;
+    public void depositar() {
+        this.depositar = 00.00 + 100.00 ;
     }
 
-    public void setSacar(Double sacar) {
-        this.sacar = sacar;
+    public void sacar() {
+    }
+
+    public Cliente getCliente() {
+        return cliente;
+    }
+
+    public void setCliente(Cliente cliente) {
+        this.cliente = cliente;
     }
 
 

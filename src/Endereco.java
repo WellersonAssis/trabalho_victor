@@ -3,17 +3,16 @@ public class Endereco {
     private String cep;
     private Cliente cliente;
 
-
+    public Endereco(String cep, String logadouro, String numero, String complemento, String cidade, String uf){
+        this.setCep(cep);
+        this.setNumero(logadouro);
+        this.setNumero(numero);
+        this.setComplemento(complemento);
+        this.setCidade(cidade);
+        this.setUf(uf);
+    }
 
     private String logadouro;
-
-    public String getLogadouro() {
-        return logadouro;
-    }
-
-    public void setLogadouro(String logadouro) {
-        this.logadouro = logadouro;
-    }
 
     private String numero;
 
@@ -70,6 +69,14 @@ public class Endereco {
 
     public void setCliente(Cliente cliente) {
         this.cliente = cliente;
+    }
+
+    public String getLogadouro() {
+        return logadouro;
+    }
+
+    public void setLogadouro(String logadouro) {
+        this.logadouro = logadouro;
     }
 }
 

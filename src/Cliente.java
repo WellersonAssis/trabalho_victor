@@ -4,6 +4,7 @@ public class Cliente extends Pessoa {
     private Endereco endereco;
     private Conta conta;
 
+
     public Boolean getVip() {
         return vip;
     }
